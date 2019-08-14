@@ -2,15 +2,15 @@
 <div class="container">
     <div class="row">
       <div class="col">
-        <h1>{{p.title}}</h1>
+        <h1>{{p.getTitle()}}</h1>
       </div>
       <div class="col text-right">
-        {{p.created_at | date:'short'}}
+        {{p.getCreated_at() | date:'short'}}
       </div>
     </div>
 <div class="row">
   <div class="col">
-  <p>{{p.content}}</p>
+  <p>{{p.getContent()}}</p>
   </div>
 </div>
 <div class="row">

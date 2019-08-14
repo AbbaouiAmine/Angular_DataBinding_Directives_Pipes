@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+<h1>Posts</h1>
+</div>
+</div>
+</div>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let el of posts"  [ngClass]="{
+        'list-group-item' : true,
+        'list-group-item-success' : el.loveIts >0 ,
+        'list-group-item-danger' : el.loveIts <0 }">
+        <app-post-list-item [p]="el"></app-post-list-item>
+    </li>
+  </ul>
+
